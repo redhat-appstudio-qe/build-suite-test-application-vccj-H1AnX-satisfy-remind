@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-bbmy
+  namespace: build-e2e-ysip-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e1fd87d52bb95968268957da20365ea35be49817e81f262f5ad48f2f57bd93dc
+        name: container-image
+        resources: {}
+status: {}
