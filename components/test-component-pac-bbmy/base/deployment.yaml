@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: test-component-pac-bbmy
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e1fd87d52bb95968268957da20365ea35be49817e81f262f5ad48f2f57bd93dc
         imagePullPolicy: Always
         name: container-image
         resources:
